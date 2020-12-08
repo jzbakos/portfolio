@@ -1,0 +1,150 @@
+html,
+body {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+.fixed-top {
+  background-color: rgba(255, 255, 255, 0) !important;
+}
+
+.fixed-top.scrolled {
+  background-color: rgb(255, 255, 255) !important;
+  transition: background-color 200ms linear;
+}
+
+#profile {
+  width: 100%;
+  border: 10px double rgb(255, 255, 255);
+  border-radius: 50%;
+}
+
+#profile:hover {
+  filter: brightness(90%);
+  border: 8px solid rgb(218, 218, 218);
+}
+
+.title-text {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+hr.title {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: rgb(145, 145, 145);
+}
+
+hr.heading-divider {
+  margin-top: 0;
+  margin-bottom: 5px;
+  width: 80%;
+  margin: auto;
+}
+
+.heading {
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#preface {
+  min-width: 320px;
+  min-height: 100vh;
+  max-height: 100vh;
+  background-size: 100%;
+  width: 100%;
+  background: url("../img/sushi-background.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+#preface-content {
+  height: 100%;
+  width: 50%;
+  min-width: 320px;
+  color: rgb(255, 255, 255);
+}
+
+#profile-mobile {
+  width: 70%;
+  min-width: 200px;
+  border: 5px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+@media (min-width: 500px) {
+  #profile-mobile {
+    display: none;
+  }
+
+  #title-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 499px) {
+  #preface {
+    min-width: 320px;
+    min-height: 100vh;
+    max-height: 100vh;
+    background-size: 100%;
+    width: 100%;
+    background: url("../img/sushi-background-mobile.png") no-repeat center
+      center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    display: flex;
+    align-items: center;
+  }
+
+  #profile {
+    display: none;
+  }
+
+  #title-landscape {
+    display: none;
+  }
+}
+
+#content {
+  min-width: 370px;
+  width: 50%;
+}
+
+.section {
+  margin-top: 70px;
+}
+
+#graphs {
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+#section-farewell {
+  text-align: center;
+  margin-top: 100px;
+}
+
+#section-farewell h1 {
+  font-weight: 300;
+}
+
+#footer {
+  background-color: #f03c3c;
+  padding: 30px;
+  color: white;
+  height: 80px;
+  margin-top: 150px;
+}
