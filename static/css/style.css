@@ -4,6 +4,32 @@ body {
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
+  overflow: overlay;
+  scroll-behavior: smooth;
+}
+
+.body.scrolled {
+  padding-top: 100px;
+}
+
+#navbar {
+  height: 100px;
+}
+
+#nav-list {
+  border-bottom: 1px solid rgb(138, 138, 138);
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.navbar-nav.scrolled {
+  border-bottom: 0 !important;
+}
+
+.nav-item {
+  margin: 5px 30px 5px 30px;
+  font-size: 16px;
+  text-transform: uppercase;
 }
 
 .fixed-top {
@@ -12,18 +38,18 @@ body {
 
 .fixed-top.scrolled {
   background-color: rgb(255, 255, 255) !important;
-  transition: background-color 200ms linear;
+  transition: background-color 400ms linear;
 }
 
 #profile {
   width: 100%;
-  border: 10px double rgb(255, 255, 255);
+  border: 6px solid rgb(255, 255, 255);
   border-radius: 50%;
 }
 
 #profile:hover {
-  filter: brightness(90%);
-  border: 8px solid rgb(218, 218, 218);
+  filter: brightness(85%);
+  border: 6px solid rgb(218, 218, 218);
 }
 
 .title-text {
@@ -57,7 +83,7 @@ hr.heading-divider {
   max-height: 100vh;
   background-size: 100%;
   width: 100%;
-  background: url("../img/background-h.jpg") no-repeat center center fixed;
+  background: url("../img/forest.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -123,25 +149,11 @@ hr.heading-divider {
 }
 
 .section {
-  margin-top: 70px;
-}
-
-#graphs {
-  margin-top: 60px;
-  margin-bottom: 30px;
-}
-
-#section-farewell {
-  text-align: center;
-  margin-top: 100px;
-}
-
-#section-farewell h1 {
-  font-weight: 300;
+  padding-top: 110px;
 }
 
 #footer {
-  background-color: #f03c3c;
+  background-color: #353535;
   padding: 30px;
   color: white;
   height: 80px;
